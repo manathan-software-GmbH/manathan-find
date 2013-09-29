@@ -3,7 +3,7 @@ manathan-find
 
 A simple, extendable search engine based on lucene.net
 
-** usage
+**usage**
 
 first run manathan.indexer on the location you want to index. Specify this in the config file like so: 
 
@@ -32,7 +32,8 @@ Once the indexer is done, startup either manathanFind (a web ui) or manathan.fin
 
 Done :)
 
-** create your own crawler
+**create your own crawler**
+
 A crawler has to inherit ICrawler, and must be registered in the indexer. You should use the configuration section to get the pages you require, and specify a name for the crawler as well
 
 A simple crawler may then look like this:
@@ -95,7 +96,7 @@ Once you added some magic, register the crawler in your indexer and create a pag
 	    </index>
 	  </search>
 
-** create your own rules
+**create your own rules**
 
 While it's nice having a specialized crawler for every page, you might want to be generic. This can be done with rules.
 A rule does not have to inherit anything, and each crawler is responsible by itself to load them. If you add a rule to a page your crawler does not know of it will ignore the rule.
