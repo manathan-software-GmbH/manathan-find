@@ -3,6 +3,12 @@ manathan-find
 
 A simple, extendable search engine based on lucene.net
 
+We use it for logfiles and intranet, you may use it to kick google's a**
+
+![alt text][logo]
+
+[logo]: http://www.manathan.net/4a0b1c10-7aca-4370-ac5e-ec3903bd2fff.document "manathan-find"
+
 **usage**
 
 first run manathan.indexer on the location you want to index. Specify this in the config file like so: 
