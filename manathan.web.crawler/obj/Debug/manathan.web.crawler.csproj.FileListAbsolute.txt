@@ -1,0 +1,14 @@
+C:\Projects\manathan.find\manathan.web.crawler\obj\Debug\manathan.web.crawler.csprojResolveAssemblyReference.cache
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\manathan.web.crawler.dll
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\manathan.web.crawler.pdb
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\HtmlAgilityPack.dll
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\manathan.find.dll
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\Lucene.Net.dll
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\DotNetRules.dll
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\manathan.find.pdb
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\HtmlAgilityPack.pdb
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\HtmlAgilityPack.xml
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\Lucene.Net.xml
+C:\Projects\manathan.find\manathan.web.crawler\bin\Debug\DotNetRules.pdb
+C:\Projects\manathan.find\manathan.web.crawler\obj\Debug\manathan.web.crawler.dll
+C:\Projects\manathan.find\manathan.web.crawler\obj\Debug\manathan.web.crawler.pdb

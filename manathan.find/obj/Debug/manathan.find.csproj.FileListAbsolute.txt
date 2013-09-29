@@ -1,0 +1,10 @@
+C:\Projects\manathan.find\manathan.find\obj\Debug\manathan.find.csprojResolveAssemblyReference.cache
+C:\Projects\manathan.find\manathan.find\bin\Debug\manathan.find.dll
+C:\Projects\manathan.find\manathan.find\bin\Debug\manathan.find.pdb
+C:\Projects\manathan.find\manathan.find\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Projects\manathan.find\manathan.find\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\manathan.find\manathan.find\bin\Debug\DotNetRules.pdb
+C:\Projects\manathan.find\manathan.find\bin\Debug\Lucene.Net.xml
+C:\Projects\manathan.find\manathan.find\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\manathan.find\manathan.find\obj\Debug\manathan.find.dll
+C:\Projects\manathan.find\manathan.find\obj\Debug\manathan.find.pdb

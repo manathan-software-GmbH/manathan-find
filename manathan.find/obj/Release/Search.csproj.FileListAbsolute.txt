@@ -1,0 +1,16 @@
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Search.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Search.pdb
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\DotNetRules.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Lucene.Net.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Searcharoo.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\EPocalipse.IFilter.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\DotNetRules.pdb
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Lucene.Net.xml
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Searcharoo.pdb
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\EPocalipse.IFilter.pdb
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\obj\Release\Search.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\obj\Release\Search.pdb
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\obj\Release\Search.csprojResolveAssemblyReference.cache
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Newtonsoft.Json.dll
+\\osqlclr006\store$\mkainer\documents\visual studio 2012\Projects\UiGuideSearch\Search\bin\Release\Newtonsoft.Json.xml
+\\Osqlclr006\store$\mkainer\Documents\Visual Studio 2012\Projects\UiGuideSearch\Search\bin\Release\ICSharpCode.SharpZipLib.dll

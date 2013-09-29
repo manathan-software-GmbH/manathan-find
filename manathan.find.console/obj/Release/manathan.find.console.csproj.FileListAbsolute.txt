@@ -1,0 +1,10 @@
+C:\Projects\manathan.find\manathan.find.console\bin\Release\manathan.find.console.exe.config
+C:\Projects\manathan.find\manathan.find.console\bin\Release\manathan.find.console.exe
+C:\Projects\manathan.find\manathan.find.console\bin\Release\manathan.find.console.pdb
+C:\Projects\manathan.find\manathan.find.console\bin\Release\manathan.find.dll
+C:\Projects\manathan.find\manathan.find.console\bin\Release\Lucene.Net.dll
+C:\Projects\manathan.find\manathan.find.console\bin\Release\manathan.find.pdb
+C:\Projects\manathan.find\manathan.find.console\bin\Release\Lucene.Net.xml
+C:\Projects\manathan.find\manathan.find.console\obj\Release\manathan.find.console.exe
+C:\Projects\manathan.find\manathan.find.console\obj\Release\manathan.find.console.pdb
+C:\Projects\manathan.find\manathan.find.console\obj\Release\manathan.find.console.csprojResolveAssemblyReference.cache

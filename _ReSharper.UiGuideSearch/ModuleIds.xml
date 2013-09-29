@@ -1,0 +1,11 @@
+<Modules>
+  <Module PersistentId="7C78753E-3376-4425-B92C-397CC90EC864" ModuleId="Search" />
+  <Module PersistentId="864689AB-F471-4A08-AD4C-A125D5B9B3EC" ModuleId="Searcharoo" />
+  <Module PersistentId="1ABDFA51-1CA0-4B15-BE19-7B45E6EB73B6" ModuleId="UiGuide" />
+  <Module PersistentId="C7E1BECB-DD18-4486-94F4-B90EE55ACA01" ModuleId="UiGuideSearch" />
+  <Module PersistentId="D0EF9890-E2FD-405C-AD45-3EA1F2BF1C6A" ModuleId="Search.Git" />
+  <Module PersistentId="A4C94C8D-C36E-478C-A498-6AF270598526" ModuleId="IntranetIndexer" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="Lucene.Net, Version=2.0.0.4, Culture=neutral, PublicKeyToken=null" ModuleId="Lucene.Net" />
+  <Module PersistentId="46142679-C995-493A-A680-1414C86EFD53" ModuleId="Search.Sharepoint" />
+</Modules>

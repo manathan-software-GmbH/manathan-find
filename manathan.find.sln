@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathanFind", "manathanFind\manathanFind.csproj", "{C7E1BECB-DD18-4486-94F4-B90EE55ACA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.indexer", "manathan.indexer\manathan.indexer.csproj", "{A4C94C8D-C36E-478C-A498-6AF270598526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.find", "manathan.find\manathan.find.csproj", "{7C78753E-3376-4425-B92C-397CC90EC864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.web.crawler", "manathan.web.crawler\manathan.web.crawler.csproj", "{EE4449E6-3F71-4249-81B5-E93B6627FF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.file.crawler", "manathan.file.crawler\manathan.file.crawler.csproj", "{C342DD2E-C976-4E01-B1CF-D6A045D7ADAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.find.console", "manathan.find.console\manathan.find.console.csproj", "{F7040845-A369-4C79-AF22-56618C96FE0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7E1BECB-DD18-4486-94F4-B90EE55ACA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E1BECB-DD18-4486-94F4-B90EE55ACA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E1BECB-DD18-4486-94F4-B90EE55ACA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E1BECB-DD18-4486-94F4-B90EE55ACA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C94C8D-C36E-478C-A498-6AF270598526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C94C8D-C36E-478C-A498-6AF270598526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C94C8D-C36E-478C-A498-6AF270598526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C94C8D-C36E-478C-A498-6AF270598526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C78753E-3376-4425-B92C-397CC90EC864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C78753E-3376-4425-B92C-397CC90EC864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C78753E-3376-4425-B92C-397CC90EC864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C78753E-3376-4425-B92C-397CC90EC864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4449E6-3F71-4249-81B5-E93B6627FF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4449E6-3F71-4249-81B5-E93B6627FF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4449E6-3F71-4249-81B5-E93B6627FF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4449E6-3F71-4249-81B5-E93B6627FF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C342DD2E-C976-4E01-B1CF-D6A045D7ADAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C342DD2E-C976-4E01-B1CF-D6A045D7ADAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C342DD2E-C976-4E01-B1CF-D6A045D7ADAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C342DD2E-C976-4E01-B1CF-D6A045D7ADAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7040845-A369-4C79-AF22-56618C96FE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7040845-A369-4C79-AF22-56618C96FE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7040845-A369-4C79-AF22-56618C96FE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7040845-A369-4C79-AF22-56618C96FE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

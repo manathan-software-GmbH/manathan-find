@@ -1,0 +1,9 @@
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\manathan.file.crawler.dll
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\manathan.file.crawler.pdb
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\manathan.find.dll
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\Lucene.Net.dll
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\manathan.find.pdb
+C:\Projects\manathan.find\manathan.file.crawler\bin\Release\Lucene.Net.xml
+C:\Projects\manathan.find\manathan.file.crawler\obj\Release\manathan.file.crawler.csprojResolveAssemblyReference.cache
+C:\Projects\manathan.find\manathan.file.crawler\obj\Release\manathan.file.crawler.dll
+C:\Projects\manathan.find\manathan.file.crawler\obj\Release\manathan.file.crawler.pdb

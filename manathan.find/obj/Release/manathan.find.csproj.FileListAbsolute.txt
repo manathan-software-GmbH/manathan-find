@@ -1,0 +1,6 @@
+C:\Projects\manathan.find\manathan.find\bin\Release\manathan.find.dll
+C:\Projects\manathan.find\manathan.find\bin\Release\manathan.find.pdb
+C:\Projects\manathan.find\manathan.find\bin\Release\Lucene.Net.xml
+C:\Projects\manathan.find\manathan.find\obj\Release\manathan.find.csprojResolveAssemblyReference.cache
+C:\Projects\manathan.find\manathan.find\obj\Release\manathan.find.dll
+C:\Projects\manathan.find\manathan.find\obj\Release\manathan.find.pdb

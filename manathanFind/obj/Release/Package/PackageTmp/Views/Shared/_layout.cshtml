@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@ViewBag.Title</title>
+        <link href="~/Content/s.css" rel="stylesheet" />
+        <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript">
+            WebFontConfig = {
+                google: { families: ['Open+Sans+Condensed:300:latin'] }
+            };
+            (function () {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('[data-toggle-more="result"]').hide();
+                $('[data-toggle-more="result"]').click(function() {
+                    $(this).parent().find('[data-toggle-more="result"]').hide('medium');
+                    $(this).parent().find('[data-toggle-more="toggle"]').show();
+                });
+                $('[data-toggle-more="toggle"]').click(function () {
+                    $(this).parent().find('[data-toggle-more="toggle"]').hide();
+                    $(this).parent().find('[data-toggle-more="result"]').show('medium');
+                });
+                $('[data-dialog]').click(function() {
+                    $('.' + $(this).attr('data-dialog')).toggle('medium');
+                });
+                $('[data-dialog-window] [data-dialog-close]').click(function () {
+                    $(this).parents('[data-dialog-window]').hide('medium');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            @RenderBody()
+        </div>
+    </body>
+</html>
