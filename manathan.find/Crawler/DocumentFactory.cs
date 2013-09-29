@@ -22,8 +22,11 @@
                                       Field.Index.TOKENIZED);
             document.Add(dateField);
 
-            var titleField = new Field("Title", downloadedDocument.Title, Field.Store.YES, Field.Index.TOKENIZED);
-            document.Add(titleField);
+            if (!string.IsNullOrEmpty(downloadedDocument.Title))
+            {
+                var titleField = new Field("Title", downloadedDocument.Title, Field.Store.YES, Field.Index.TOKENIZED);
+                document.Add(titleField);
+            }
 
             if (!string.IsNullOrEmpty(downloadedDocument.MetaContext))
             {
@@ -32,9 +35,12 @@
                 document.Add(metaDataField);
             }
 
-            var urlField = new Field("Url", downloadedDocument.Uri.OriginalString, Field.Store.YES,
-                                     Field.Index.TOKENIZED);
-            document.Add(urlField);
+            if (downloadedDocument.Uri != null)
+            {
+                var urlField = new Field("Url", downloadedDocument.Uri.OriginalString, Field.Store.YES,
+                                         Field.Index.TOKENIZED);
+                document.Add(urlField);
+            }
             return document;
         }
     }
