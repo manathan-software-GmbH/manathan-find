@@ -81,19 +81,19 @@ If you want to make your search results better, your crawler can set the Title a
 	
 Once you added some magic, register the crawler in your indexer and create a page that should be crawled:
 
-  <search>
-    <index workerstorage="C:\manathan-index\worker"
-           releasestorage="C:\manathan-index\release">
-      <crawler>
-        <crawlers>
-          <item name="MyCrawler" type="manathan.crawler.MyCrawler, manathan.crawler"/>
-        </crawlers>
-      </crawler>
-      <pages>
-        <page url="someurl" crawler="MyCrawler"></page>
-      </pages>
-    </index>
-  </search>
+	  <search>
+	    <index workerstorage="C:\manathan-index\worker"
+	           releasestorage="C:\manathan-index\release">
+	      <crawler>
+	        <crawlers>
+	          <item name="MyCrawler" type="manathan.crawler.MyCrawler, manathan.crawler"/>
+	        </crawlers>
+	      </crawler>
+	      <pages>
+	        <page url="someurl" crawler="MyCrawler"></page>
+	      </pages>
+	    </index>
+	  </search>
 
 ** create your own rules
 
