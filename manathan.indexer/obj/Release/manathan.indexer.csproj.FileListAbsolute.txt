@@ -19,3 +19,5 @@ C:\Projects\manathan.find\manathan.indexer\obj\Release\manathan.indexer.exe.mani
 C:\Projects\manathan.find\manathan.indexer\obj\Release\manathan.indexer.application
 C:\Projects\manathan.find\manathan.indexer\obj\Release\manathan.indexer.exe
 C:\Projects\manathan.find\manathan.indexer\obj\Release\manathan.indexer.pdb
+C:\Projects\manathan.find\manathan.indexer\bin\Release\log4net.dll
+C:\Projects\manathan.find\manathan.indexer\bin\Release\log4net.xml

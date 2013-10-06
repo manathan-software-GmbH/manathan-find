@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="manathan.indexer.exe.manifest" size="6761">
+    <dependentAssembly dependencyType="install" codebase="manathan.indexer.exe.manifest" size="7429">
       <assemblyIdentity name="manathan.indexer.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/wJK6HyshpmroPVTFF10wPBXntq0eSra/5+v+76BS/s=</dsig:DigestValue>
+        <dsig:DigestValue>fbL9J64k/LbwhMNab7koSIAzcbrUieyh7niIL7fOu2k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

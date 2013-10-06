@@ -8,6 +8,7 @@
     using System.Linq;
     using Configuration;
     using Crawler;
+    using Events;
     using Lucene.Net.Analysis;
     using Lucene.Net.Analysis.Standard;
     using Lucene.Net.Index;
@@ -29,6 +30,31 @@
         static Directory Directory { get; set; }
         static Analyzer Analyzer { get; set; }
 
+        public static event CrawlerBegin CrawlerBegin;
+
+        public static event CrawlerComplete CrawlerComplete;
+
+        public static event CrawlerFailed CrawlerFailed;
+
+        static void OnCrawlerFailed(CrawlerFailedEventArgs args)
+        {
+            var handler = CrawlerFailed;
+            if (handler != null) handler(null, args);
+        }
+
+        static void OnCrawlerBegin(CrawlerEventArgs args)
+        {
+            var handler = CrawlerBegin;
+            if (handler != null) handler(null, args);
+        }
+
+        static void OnCrawlerComplete(CrawlerEventArgs args)
+        {
+            var handler = CrawlerComplete;
+            if (handler != null) handler(null, args);
+        }
+
+
         public static void Initialize(bool isIndexer = false)
         {
             _searchConfig = IndexedPages.GetConfigSettings();
@@ -44,11 +70,34 @@
                 var indexExists = IndexReader.IndexExists(Directory);
                 var createIndex = !indexExists;
                 _indexWriter = new IndexWriter(Directory, Analyzer, createIndex);
-                _searchConfig.Crawler.CrawlersFactory(Directory, Analyzer).ToList()
-                            .ForEach(_ => _.Crawl());
-                Release();
                 _indexWriter.Close();
             }
+            Directory.Close();
+        }
+
+        public static void CreateIndex()
+        {
+            Directory = FSDirectory.GetDirectory(_path, !_path.Exists);
+            Analyzer = new StandardAnalyzer();
+            var indexExists = IndexReader.IndexExists(Directory);
+            var createIndex = !indexExists;
+            _indexWriter = new IndexWriter(Directory, Analyzer, createIndex);
+            _searchConfig.Crawler.CrawlersFactory(Directory, Analyzer).ToList()
+                        .ForEach(_ =>
+                            {
+                                try
+                                {
+                                    OnCrawlerBegin(new CrawlerEventArgs(_));
+                                    _.Crawl();
+                                    OnCrawlerComplete(new CrawlerEventArgs(_));
+                                }
+                                catch (Exception error)
+                                {
+                                    OnCrawlerFailed(new CrawlerFailedEventArgs(_, error));
+                                }
+                            });
+            Release();
+            _indexWriter.Close();
             Directory.Close();
         }
 
@@ -66,11 +115,12 @@
 
         public static void AddDocument<T>(T downloadedDocument, Page page) where T : BaseDocument
         {
-            EngineStatus.IndexDocument(downloadedDocument.Title);
+            EngineStatus.BeginIndexDocument(page, downloadedDocument);
             Debug.WriteLine("Adding a {0} downloaded from {1}", downloadedDocument.GetType(), downloadedDocument.Uri);
 
             var document = DocumentFactory<T>.Create(page, downloadedDocument);
             _indexWriter.AddDocument(document);
+            EngineStatus.IndexDocumentComplete(page, downloadedDocument);
         }
         
         public HitCollection Search(string searchFor)

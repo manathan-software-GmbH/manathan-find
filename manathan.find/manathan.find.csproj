@@ -53,6 +53,17 @@
     <Compile Include="Crawler\DocumentFactory.cs" />
     <Compile Include="Crawler\ICrawler.cs" />
     <Compile Include="EngineStatus.cs" />
+    <Compile Include="Events\CrawlDocumentBegin.cs" />
+    <Compile Include="Events\CrawlDocumentComplete.cs" />
+    <Compile Include="Events\CrawlDocumentEventArgs.cs" />
+    <Compile Include="Events\CrawlerBegin.cs" />
+    <Compile Include="Events\CrawlerComplete.cs" />
+    <Compile Include="Events\CrawlerEventArgs.cs" />
+    <Compile Include="Events\CrawlerFailed.cs" />
+    <Compile Include="Events\CrawlerFailedEventArgs.cs" />
+    <Compile Include="Events\CrawlPageBegin.cs" />
+    <Compile Include="Events\CrawlPageComplete.cs" />
+    <Compile Include="Events\CrawlPageEventArgs.cs" />
     <Compile Include="Models\Hit.cs" />
     <Compile Include="Models\HitCollection.cs" />
     <Compile Include="SearchEngine.cs" />
