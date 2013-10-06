@@ -83,6 +83,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\manathan.eventlog.crawler\manathan.eventlog.crawler.csproj">
+      <Project>{eafc13ab-fd36-4ba2-9385-0145c5e49d8b}</Project>
+      <Name>manathan.eventlog.crawler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\manathan.file.crawler\manathan.file.crawler.csproj">
       <Project>{c342dd2e-c976-4e01-b1cf-d6a045d7adab}</Project>
       <Name>manathan.file.crawler</Name>

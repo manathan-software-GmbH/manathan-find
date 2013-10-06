@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.file.crawler", "ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.find.console", "manathan.find.console\manathan.find.console.csproj", "{F7040845-A369-4C79-AF22-56618C96FE0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manathan.eventlog.crawler", "manathan.eventlog.crawler\manathan.eventlog.crawler.csproj", "{EAFC13AB-FD36-4BA2-9385-0145C5E49D8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{F7040845-A369-4C79-AF22-56618C96FE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7040845-A369-4C79-AF22-56618C96FE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7040845-A369-4C79-AF22-56618C96FE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFC13AB-FD36-4BA2-9385-0145C5E49D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFC13AB-FD36-4BA2-9385-0145C5E49D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFC13AB-FD36-4BA2-9385-0145C5E49D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFC13AB-FD36-4BA2-9385-0145C5E49D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
