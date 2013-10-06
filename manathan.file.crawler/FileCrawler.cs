@@ -36,12 +36,13 @@
                 {
                     try
                     {
-                        var lines = File.ReadAllLines(file).Select(line => new LineDocument(page.Url, line)).ToList();
+                        scopedPage.Url = file;
+                        var lines = File.ReadAllLines(file).Select(line => new LineDocument(file, line)).ToList();
                         var firstLine = lines.FirstOrDefault();
                         if (firstLine == null) return;
 
                         // first line has to be handled seperatly to ensure header
-                        page.GetAllRulesFor<LineRule>().ForEach(_ => _.ApplyTo(firstLine, 0));
+                        scopedPage.GetAllRulesFor<LineRule>().ForEach(_ => _.ApplyTo(firstLine, 0));
                         SearchEngine.AddDocument(firstLine, scopedPage);
 
                         Parallel.ForEach(lines.GetRange(1, lines.Count - 1), (line, linestate, lineIndex) =>
@@ -49,7 +50,7 @@
                             try
                             {
                                 line.WithSameHeadersAs(firstLine);
-                                page.GetAllRulesFor<LineRule>().ForEach(_ => _.ApplyTo(line, lineIndex + 1));
+                                scopedPage.GetAllRulesFor<LineRule>().ForEach(_ => _.ApplyTo(line, lineIndex + 1));
                                 SearchEngine.AddDocument(line, scopedPage);
                             }
                             catch (Exception)

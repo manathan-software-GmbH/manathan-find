@@ -54,6 +54,11 @@ namespace manathan.find.Configuration
             set { this["crawler"] = value; }
         }
 
+        public override bool IsReadOnly()
+        {
+            return false;
+        }
+
         public List<T> GetAllRulesFor<T>() where T : class
         {
             return Rules.Cast<Rule>().Select(rule => rule.GetRule<T>()).Where(lineRule => lineRule != null).ToList();
