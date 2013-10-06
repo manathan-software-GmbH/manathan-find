@@ -85,31 +85,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dxAzkc/eYPD+Vvzxm3ncKj37EInt0FlFReaJaj9rFIc=</dsig:DigestValue>
+        <dsig:DigestValue>0MlDXhmGUl2pOzafww+r2KHkY0Vzczo25AujXCevOoA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="manathan.find.dll" size="23552">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="manathan.find.dll" size="26112">
       <assemblyIdentity name="manathan.find" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2NkmlYfKShjjJEPbuoH6gHXMROWTTmfO4YsNjOMdk5A=</dsig:DigestValue>
+        <dsig:DigestValue>3xHO+ubAPUtuvBYJjw2oHGMCPIkmUjfome/hyhTfCrI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="manathan.indexer.exe" size="6144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="manathan.indexer.exe" size="8192">
       <assemblyIdentity name="manathan.indexer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jA8Qu5VVDX3zRPUIOxDXP25CCAipExFx14nujlUcX0Q=</dsig:DigestValue>
+        <dsig:DigestValue>Ezefkj/D5imULv7W1V0pbRyVY4OvMlzx0QVq8VHOuYI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -121,17 +121,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6blD12S64DhwUkGWC7cXbgSPgHG9+7mgAgXJsBq8Ies=</dsig:DigestValue>
+        <dsig:DigestValue>RYlUP3mmUT1Ptp8eBue0H+zQ45/oVV7l7DGHklbbHiI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="manathan.indexer.exe.config" size="3753">
+  <file name="manathan.indexer.exe.config" size="3515">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0GxY9fQND8kNmPxfn2e8AY28lCKJIZjso/DtuqdfiwQ=</dsig:DigestValue>
+      <dsig:DigestValue>zWoTL02Jmh6+TID5p3bgEl9r7FqgkKlawxveiVkeyEM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

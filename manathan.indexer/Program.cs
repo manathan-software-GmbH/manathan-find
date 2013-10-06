@@ -1,4 +1,5 @@
-﻿namespace manathan.indexer
+﻿[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+namespace manathan.indexer
 {
     #region
 
@@ -14,15 +15,31 @@
             try
             {
                 SearchEngine.Initialize(true);
-                SearchEngine.CrawlerBegin += (sender, args) => WriteInfo("Crawler {0} started working...", args.CurrentCrawler.GetType().Name);
-                SearchEngine.CrawlerFailed += (sender, args) => WriteError(args.Error, "Crawler {0} failed unexpected: {1}", args.CurrentCrawler.GetType().Name, args.Error.Message);
-                SearchEngine.CrawlerComplete += (sender, args) => WriteInfo("Crawler {0} completed the work successfully", args.CurrentCrawler.GetType().Name);
+                SubscribeLoggers();
                 SearchEngine.CreateIndex();
             }
             catch (Exception e0)
             {
                 WriteError(e0, "manathan.indexer stopped unexpected");
             }
+        }
+
+        static void SubscribeLoggers()
+        {
+            EngineStatus.CrawlPageBegin += (sender, args) => WriteInfo("Started indexing of page {0}", args.Page.Url);
+            EngineStatus.CrawlPageComplete += (sender, args) => WriteInfo("Completed indexing of page {0}", args.Page.Url);
+
+            EngineStatus.CrawlDocumentBegin += (sender, args) => WriteInfo("Started indexing of document {0} on page {1}", args.Document.Title, args.Page.Url);
+            EngineStatus.CrawlDocumentBegin += (sender, args) => WriteInfo("Completed indexing of document {0} on page {1}", args.Document.Title, args.Page.Url);
+
+            SearchEngine.CrawlerBegin +=
+                (sender, args) => WriteInfo("Crawler {0} started working...", args.CurrentCrawler.GetType().Name);
+            SearchEngine.CrawlerFailed +=
+                (sender, args) =>
+                WriteError(args.Error, "Crawler {0} failed unexpected: {1}", args.CurrentCrawler.GetType().Name,
+                           args.Error.Message);
+            SearchEngine.CrawlerComplete +=
+                (sender, args) => WriteInfo("Crawler {0} completed the work successfully", args.CurrentCrawler.GetType().Name);
         }
 
         static void WriteInfo(string message, params object[] paras)
